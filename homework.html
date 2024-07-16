@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //1
+      function print(city) {
+        console.log(city);
+      }
+
+      print("Ulaanbaatar");
+
+      //2
+
+      const productName = "Airpods Pro2";
+      let price = 250;
+      let discount = 37.6;
+      let currentPrice = price * (1 - discount / 100);
+      console.log(
+        "Wallmart дэлгүүрт " +
+          productName +
+          " бүтээгдэхүүн " +
+          price +
+          "$ байснаас " +
+          discount +
+          "% хямдарч " +
+          currentPrice +
+          " боллоо."
+      );
+
+      //3
+      let num1 = 67;
+      let num2 = 973;
+      let sum = num1 + num2;
+      console.log(num1 + " ба " + num2 + " тоонуудын нийлбэр нь " + sum);
+
+      //4
+      function calculateProblems(problemsPerHour, totalHours) {
+        return totalHours / problemsPerHour;
+      }
+
+      let problemsPerHour = 2;
+      let totalHours = 6;
+      let count = calculateProblems(problemsPerHour, totalHours);
+
+      console.log(
+        "I study for " + totalHours + " hours to solve " + count + " problems"
+      );
+
+      //5
+      function printFavoriteFood(name, food) {
+        console.log(name + " loves to eat " + food);
+      }
+
+      printFavoriteFood("Sara", "pizza");
+      //4
+      function printWeather(cityName, weather) {
+        console.log(cityName + " хотод " + weather + " байна.");
+      }
+      printWeather("Chicago", "32");
+
+      //5
+      function printBookDetails(title, author, yearPublished) {
+        console.log(author + " writes " + title + " in " + yearPublished);
+        printBookDetails("Harry Potter", "J.K.Rowling", "1997");
+      }
+    </script>
+  </body>
+</html>

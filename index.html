@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to Javascript</title>
+  </head>
+  <body>
+    Welcome to Javascript.
+    <script>
+      console.log("Hello World");
+
+      console.log(123 + 123);
+
+      // Javascript variables
+
+      const name = "Bold";
+      const age = "30";
+      console.log(name + " is " + age + " years old");
+
+      function greet(name, age = 0) {
+        console.log("Hello" + name + "age is" + age);
+      }
+
+      greet("Duuree, 25");
+      greet("Nandir, 23");
+      //
+
+      function sum(a, b) {
+        console.log(a + b);
+      }
+
+      sum(25, 30);
+
+      function square(num) {
+        return num * num;
+      }
+      const a = square(2);
+      console.log(a);
+    </script>
+  </body>
+</html>
+>
